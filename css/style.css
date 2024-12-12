@@ -1,0 +1,41 @@
+:root{
+    --color-scroll-top: rgb(9, 11, 18, 0.5);
+    --color-menu: #000000;
+    --color-main:#141922;
+    --color-footer: #282828;
+    --color-text: #797b81;
+    --color-text-link: #adff2e;
+}
+
+body{
+    background-color: var(--color-main) ;
+}
+
+.container{
+    height: 90vh;
+    display: flex;
+}
+
+.main__menus{
+    flex-basis: 10%;
+    background-color: var(--color-menu);
+}
+
+.main__scrolls{
+    
+    flex-basis: 90%;
+    overflow: scroll;
+}
+
+.music__options{
+    height: 10vh;
+    background-color: var(--color-footer);
+}
+
+.main__scrolls--top{
+    background-color:var(--color-scroll-top);
+    position: sticky;
+    top: 0;
+    text-align: right;
+}
+
