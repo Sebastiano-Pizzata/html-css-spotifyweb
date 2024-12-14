@@ -1,0 +1,101 @@
+@media screen and (min-width:480px) {
+    .layout__sidebar{
+        flex-basis: 30%;
+    }
+    
+    .layout__main{
+        flex-basis: 70%;
+    }
+
+    .layout__sidebar--logos img[alt$="small"]{
+        display: none;
+    
+    }
+
+    .layout__sidebar--logos img[alt$="big"]{
+        display: inline-block;
+    
+    }
+
+    .layout__sidebar--menus ul li a span{
+        display: inline;
+
+    }
+
+    .layout__sidebar--menus ul{
+        align-items: flex-start;
+    }
+
+    .layout__sidebar--menus ul li a{
+        padding: 10px;
+    }
+
+    .layout__sidebar--logos{
+        align-items: flex-start;
+       
+    }
+
+
+    .layout__sidebar--playlist{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+        padding-left: 10px;
+    }
+
+    .layout__sidebar--playlist--btn a{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .layout__sidebar--playlist--btn a .square{
+        height: 25px;
+        width: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(#000000);
+        background-color: var(--color-text);
+        
+    }
+
+    .layout__sidebar--bottom hr{
+        display: block;
+        width: 90%;
+    
+    }
+     
+    .layout__sidebar--bottom a span{
+     display: inline;
+
+    }
+
+    .layout__sidebar--bottom{
+    align-items: flex-start;
+    padding: 10px;
+    
+
+     }
+
+     .layout__sidebar--bottom a{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+       
+    }
+
+
+
+
+   
+    
+
+    
+    
+    
+    
+      
+    
+}

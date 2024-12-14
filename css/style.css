@@ -9,22 +9,12 @@
 
 body{
     background-color: var(--color-main) ;
+    color: white;
 }
 
-.container{
+.container-layout{
     height: 90vh;
     display: flex;
-}
-
-.main__menus{
-    flex-basis: 10%;
-    background-color: var(--color-menu);
-}
-
-.main__scrolls{
-    
-    flex-basis: 90%;
-    overflow: scroll;
 }
 
 .music__options{
@@ -32,10 +22,97 @@ body{
     background-color: var(--color-footer);
 }
 
-.main__scrolls--top{
+.layout__sidebar{
+    flex-basis: 10%;
+    background-color: var(--color-menu);
+    display: flex;
+    flex-direction: column;
+}
+
+.layout__main{
+    flex-basis: 90%;
+    overflow: scroll;
+}
+
+
+
+.layout__scroll--top{
     background-color:var(--color-scroll-top);
     position: sticky;
     top: 0;
     text-align: right;
+    padding: 20px;
+    z-index: 1;
+    font-size: 0.8rem;
 }
 
+
+.btn{
+    border: 2px solid white;
+}
+
+.btn--pill{
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.layout__sidebar--top{
+    height: calc(100% - 100px);
+
+}
+
+.layout__scroll--bottom{
+    height: 100px;
+}
+
+.layout__sidebar--logos{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.layout__sidebar--logos img[alt$="big"]{
+    display: none;
+
+}
+
+.layout__sidebar--menus ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.layout__sidebar--menus ul li a span{
+    display: none;
+}
+
+.layout__sidebar--playlist{
+    display: none;
+}
+
+.layout__sidebar--bottom a span,
+.layout__sidebar--bottom hr{
+    display: none;
+
+}
+
+.layout__sidebar--bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.layout__sidebar--bottom a [alt="foto profilo"]{
+       border-radius:50% ;
+       background-color: var(--color-text);
+       width: 25px;
+}
+
+.layout__sidebar--bottom a [alt="download"]{
+    width: 20px;
+}
