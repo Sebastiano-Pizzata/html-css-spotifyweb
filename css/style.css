@@ -20,6 +20,16 @@ body{
 .music__options{
     height: 10vh;
     background-color: var(--color-footer);
+    width: 100%;
+    padding: 3rem 2rem 4rem;
+    font-size: 1.5rem;
+
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr
 }
 
 .layout__sidebar{
@@ -168,6 +178,9 @@ body{
     padding-inline: 10px;
 }
 
+.layout__main--personal-playlist .card img{
+    width: 60%;
+}
 
 .layout__main span{
    display: flex;
@@ -186,9 +199,39 @@ body{
 
 .layout__main--popular-artists .card img{
     border-radius: 50%;
+    width: 60%;
 }
 
 .layout__main--popular-artists h4{
     text-align: center;
     margin-top: 10px;
 }
+
+.music-left,
+.music-middle,
+.music-middle .play-icons,
+.music-middle .line,
+.music-right,
+.music-right .volume-setting{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.music-left .cover-img{
+    display: flex;
+}
+
+.cover-img img{
+    width: 3rem;
+    margin-right: 2rem;
+}
+
+/* .cover-img p{
+    font-size: 0.8rem;
+} */
+
+
+
+
+
