@@ -34,6 +34,11 @@ body{
     overflow: scroll;
 }
 
+.layout__main h2{
+     margin-block: 20px;
+     padding-inline: 10px;
+}
+
 
 
 .layout__scroll--top{
@@ -115,4 +120,75 @@ body{
 
 .layout__sidebar--bottom a [alt="download"]{
     width: 20px;
+}
+
+.layout__scroll--menu ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 0.6rem;
+    margin-block: 10px;
+}
+
+.layout__main--songs{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-inline: 20px;
+}
+
+.layout__main--songs .card{
+    flex-basis: calc(100% / 2 - 10px);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.layout__main--songs .card img{
+    width: 100%;
+}
+
+.layout__main--songs .card h4{
+    font-size: 0.7rem;
+}
+
+.layout__main--songs .card span{
+    font-size: 0.5rem;
+    color: var(--color-text);
+}
+
+.layout__main--personal-playlist{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-inline: 10px;
+}
+
+
+.layout__main span{
+   display: flex;
+   color: var(--color-text);
+   font-size: 0.8rem;
+   margin-top: 10px;
+   
+}
+
+.layout__main--popular-artists{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-inline: 10px;
+}
+
+.layout__main--popular-artists .card img{
+    border-radius: 50%;
+}
+
+.layout__main--popular-artists h4{
+    text-align: center;
+    margin-top: 10px;
 }

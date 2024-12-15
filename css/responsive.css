@@ -1,10 +1,16 @@
 @media screen and (min-width:480px) {
     .layout__sidebar{
         flex-basis: 30%;
+        padding: 10px;
     }
     
     .layout__main{
         flex-basis: 70%;
+    }
+    
+    .layout__sidebar--logos img{
+        width:70%;
+        padding-top: 10px;
     }
 
     .layout__sidebar--logos img[alt$="small"]{
@@ -86,16 +92,54 @@
        
     }
 
-
-
-
-   
-    
-
-    
-    
-    
     
       
+    
+}
+
+
+/* media per tablet */
+
+@media screen and (min-width: 768px) {
+
+    .layout__scroll--menu ul{
+        font-size: 0.9rem;
+        
+    }   
+
+    .layout__main--songs .card{
+        flex-basis: calc(100% / 4 - 10px);
+        flex-grow: 0;
+       
+    }
+    
+}
+
+
+
+
+/* media per desktop */
+
+@media screen and (min-width: 1024px) {
+
+    .layout__sidebar{
+        flex-basis: 25%;
+    }
+    
+    .layout__main{
+        flex-basis: 75%;
+    }
+
+
+    .layout__scroll--menu ul{
+        font-size: 1rem;
+        
+    }   
+
+    .layout__main--songs .card{
+        flex-basis: calc(100% / 6 - 10px);
+        flex-grow: 0;
+       
+    }
     
 }
