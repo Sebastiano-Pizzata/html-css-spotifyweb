@@ -21,15 +21,11 @@ body{
     height: 10vh;
     background-color: var(--color-footer);
     width: 100%;
-    padding: 3rem 2rem 4rem;
-    font-size: 1.5rem;
-
-    position: fixed;
-    bottom: 0;
-    z-index: 99;
-
-    display: grid;
-    grid-template-columns: 1fr max-content 1fr
+    padding: 2px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .layout__sidebar{
@@ -207,15 +203,9 @@ body{
     margin-top: 10px;
 }
 
-.music-left,
-.music-middle,
-.music-middle .play-icons,
-.music-middle .line,
-.music-right,
-.music-right .volume-setting{
+.music-left{
     display: flex;
-    gap: 2rem;
-    align-items: center;
+    gap: 5px;
 }
 
 .music-left .cover-img{
@@ -223,15 +213,62 @@ body{
 }
 
 .cover-img img{
-    width: 3rem;
-    margin-right: 2rem;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    padding: 5px;
 }
 
-/* .cover-img p{
-    font-size: 0.8rem;
-} */
+.like-icon {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
 
+}
 
+.play-icons{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 5px;
+    
 
+}
+
+.line{
+    display: flex;
+    gap: 5px;
+}
+
+.line span{
+    font-size: 10px;
+}
+
+.play-line{
+    width: 100px;
+    height: 5px;
+    background-color: var(--color-text);
+    position: relative;
+}
+
+.white-bar{
+    width:50px;
+    background-color: white;
+    position: absolute;
+    right: 50px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.music-right{
+    display: flex;
+   
+}
+
+.volume-line{
+    width: 50px;
+    height: 5px;
+    background-color: white;
+}
 
 
