@@ -272,3 +272,7 @@ body{
 }
 
 
+.layout__scroll--menu ul a:hover{
+    cursor: pointer;
+    color: var(--color-text-link);
+}
